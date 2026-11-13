@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application | Careers</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">CAREER<span>START.</span></div>
+        <nav>
+            <a href="#application">Apply Now</a>
+            <a href="#about">About Us</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="about">
+        <div class="hero-content">
+            <p class="tag">YOUR FUTURE STARTS HERE</p>
+            <h1>Take the first step towards your <span>future.</span></h1>
+            <p>
+                Ready to gain experience, develop new skills
+                and start your working journey? Complete our
+                application form below.
+            </p>
+            <a href="#application" class="hero-button">
+                Start Application →
+            </a>
+        </div>
+    </section>
+
+    <main class="container" id="application">
+
+        <div class="form-heading">
+            <p class="tag">CAREER OPPORTUNITIES</p>
+            <h2>Job Application Form</h2>
+            <p>Please complete all required fields.</p>
+        </div>
+
+        <form id="jobForm">
+
+            <!-- PERSONAL INFORMATION -->
+
+            <div class="form-section">
+                <h3>01. Personal Information</h3>
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+                        <label for="fullname">Full Name *</label>
+                        <input type="text" id="fullname"
+                        name="fullname" value="Malvin Ehiaze"
+                        required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="age">Age *</label>
+                        <input type="number" id="age"
+                        name="age" value="14"
+                        min="13" max="100" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email"
+                        name="email"
+                        placeholder="example@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone"
+                        name="phone"
+                        placeholder="Enter your phone number" required>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="location">Town or City *</label>
+                        <input type="text" id="location"
+                        name="location"
+                        placeholder="Enter your town or city" required>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- JOB DETAILS -->
+
+            <div class="form-section">
+                <h3>02. Job Details</h3>
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+                        <label for="position">Position Applying For *</label>
+                        <select id="position" name="position" required>
+                            <option value="">Select a position</option>
+                            <option>Retail Assistant</option>
+                            <option>Cafe Assistant</option>
+                            <option>Weekend Assistant</option>
+                            <option>Junior Work Experience</option>
+                            <option>Other Age-Appropriate Role</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="type">Employment Type *</label>
+                        <select id="type" name="type" required>
+                            <option value="">Select employment type</option>
+                            <option>Part-Time</option>
+                            <option>Weekend</option>
+                            <option>School Holidays</option>
+                            <option>Work Experience</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="start">Available Start Date</label>
+                        <input type="date" id="start" name="start">
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- EDUCATION -->
+
+            <div class="form-section">
+                <h3>03. Education</h3>
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+                        <label for="school">School Name *</label>
+                        <input type="text" id="school"
+                        name="school"
+                        placeholder="Enter your school name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="year">School Year *</label>
+                        <select id="year" name="year" required>
+                            <option value="">Select your year</option>
+                            <option>Year 9</option>
+                            <option>Year 10</option>
+                            <option>Year 11</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- SKILLS -->
+
+            <div class="form-section">
+                <h3>04. Skills & Experience</h3>
+
+                <div class="form-group full-width">
+                    <label>Which skills do you have?</label>
+
+                    <div class="checkbox-grid">
+                        <label><input type="checkbox" name="skills" value="Communication"> Communication</label>
+                        <label><input type="checkbox" name="skills" value="Teamwork"> Teamwork</label>
+                        <label><input type="checkbox" name="skills" value="Problem Solving"> Problem Solving</label>
+                        <label><input type="checkbox" name="skills" value="Time Management"> Time Management</label>
+                        <label><input type="checkbox" name="skills" value="Creativity"> Creativity</label>
+                        <label><input type="checkbox" name="skills" value="Technology"> Technology</label>
+                    </div>
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="experience">
+                        Tell us about yourself
+                    </label>
+                    <textarea id="experience" name="experience"
+                    rows="5"
+                    placeholder="Tell us about your interests, skills and any experience you have..."></textarea>
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="reason">
+                        Why would you like this job?
+                    </label>
+                    <textarea id="reason" name="reason"
+                    rows="4"
+                    placeholder="Explain why you would be a good candidate..."></textarea>
+                </div>
+            </div>
+
+            <!-- AVAILABILITY -->
+
+            <div class="form-section">
+                <h3>05. Availability</h3>
+
+                <p class="section-description">
+                    Select the days you may be available,
+                    subject to school and legal working-hour restrictions.
+                </p>
+
+                <div class="checkbox-grid">
+                    <label><input type="checkbox" name="availability" value="Monday"> Monday</label>
+                    <label><input type="checkbox" name="availability" value="Tuesday"> Tuesday</label>
+                    <label><input type="checkbox" name="availability" value="Wednesday"> Wednesday</label>
+                    <label><input type="checkbox" name="availability" value="Thursday"> Thursday</label>
+                    <label><input type="checkbox" name="availability" value="Friday"> Friday</label>
+                    <label><input type="checkbox" name="availability" value="Saturday"> Saturday</label>
+                    <label><input type="checkbox" name="availability" value="Sunday"> Sunday</label>
+                </div>
+            </div>
+
+            <!-- PARENT/GUARDIAN -->
+
+            <div class="form-section">
+                <h3>06. Parent / Guardian Consent</h3>
+
+                <p class="section-description">
+                    Applicants under 16 should provide parent or
+                    guardian details where required by the employer.
+                </p>
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+                        <label for="guardian">Parent / Guardian Name *</label>
+                        <input type="text" id="guardian"
+                        name="guardian"
+                        placeholder="Full name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="guardianphone">Guardian Contact Number *</label>
+                        <input type="tel" id="guardianphone"
+                        name="guardianphone"
+                        placeholder="Contact number" required>
+                    </div>
+
+                </div>
+
+                <label class="consent">
+                    <input type="checkbox" name="consent" required>
+                    My parent or guardian has reviewed this application
+                    and agrees to me applying. *
+                </label>
+            </div>
+
+            <!-- SUBMISSION -->
+
+            <div class="submit-section">
+
+                <p>
+                    By submitting this application, you confirm
+                    that the information provided is accurate.
+                </p>
+
+                <button type="submit" class="submit-button">
+                    Submit Application →
+                </button>
+
+                <p class="small-text">
+                    * Required fields
+                </p>
+
+                <p id="message" class="message"></p>
+
+            </div>
+
+        </form>
+    </main>
+
+    <footer>
+        <div class="logo">CAREER<span>START.</span></div>
+        <p>Building tomorrow, one opportunity at a time.</p>
+        <p class="copyright">© 2026 CareerStart. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const form = document.getElementById("jobForm");
+        const message = document.getElementById("message");
+
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            message.textContent =
+                "Your form is valid! Connect a backend to receive applications.";
+
+            message.style.color = "#16834a";
+        });
+    </script>
+
+</body>
+</html>
